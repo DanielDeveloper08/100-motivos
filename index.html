@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Denisse - 100 Motivos para Seguir Intentándolo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hearts Container for background animations -->
+    <div id="hearts-container"></div>
+
+    <!-- Background Music -->
+    <audio id="romantic-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        <!-- Alternativo: https://assets.codepen.io/4358584/An+Hour+Of+Romantic+Piano+Music.mp3 -->
+    </audio>
+
+    <!-- Floating Audio Control -->
+    <div class="music-player" id="music-btn" title="Reproducir melodía">
+        <div class="vinyl">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="disc-icon">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <span class="music-status">OFF</span>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hearts-glow"></div>
+            <h1 class="romantic-title">100 Motivos para Seguir Intentándolo</h1>
+            <p class="subtitle">Creado con todo mi amor para <span>Denisse Gutiérrez</span></p>
+            <p class="author">De su novio, <span>Daniel Asanza</span></p>
+            <div class="divider">
+                <span class="heart-icon">♥</span>
+            </div>
+        </header>
+
+        <!-- Interactive Envelope & Letter -->
+        <section class="envelope-section">
+            <div class="envelope-wrapper" id="envelope">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="pocket"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <h3 class="letter-title">Mi Denisse hermosa...</h3>
+                            <p>Sé que a veces las cosas no son perfectas, que cometemos errores y que pasamos por momentos difíciles que ponen a prueba lo que sentimos. Pero si algo tengo claro en mi vida, es que lo que tenemos vale la pena cada esfuerzo, cada disculpa y cada intento.</p>
+                            <p>Te conozco tanto y amo cada una de tus manías... Desde tu regla inquebrantable de que **solo tomas agua Dasani** (porque ninguna otra te gusta), tu decisión firme de **no tomar cola**, hasta ver cómo se te iluminan los ojos cada vez que comemos **sushi**. Me encanta verte **salir a bailar** libre y feliz, y me fascina cuando hacemos **karaoke** juntos y cantamos a todo pulmón las de **Karol G** o las de **Big Time Rush** (aunque a veces desafinemos).</p>
+                            <p>Escribí esta página para recordarte, en 100 pequeños motivos, por qué eres el amor de mi vida y por qué quiero seguir construyendo nuestro futuro juntos. Perdóname por mis fallas, mi amor. Sigamos intentándolo.</p>
+                            <p class="letter-signature">Con todo mi amor, Daniel ♥</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="envelope-instruction">Haz clic en el sobre para abrir mi carta</p>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section glass-card">
+            <h2 class="section-title">Nuestra Fecha Especial</h2>
+            <p class="countdown-intro">Celebramos nuestro amor los <strong>17 de cada mes</strong>. Faltan:</p>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <label>Días</label>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <label>Horas</label>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <label>Minutos</label>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <label>Segundos</label>
+                </div>
+            </div>
+            <p class="countdown-footer" id="countdown-message">¡Cada mes a tu lado es mi mejor regalo!</p>
+        </section>
+
+        <!-- Photo Gallery (Polaroid style) -->
+        <section class="gallery-section">
+            <h2 class="section-title">Momentos Inolvidables</h2>
+            <p class="section-subtitle">Algunos de nuestros instantes favoritos juntos</p>
+            <div class="polaroid-grid">
+                
+                <div class="polaroid-card" data-index="1">
+                    <div class="polaroid-img-wrapper">
+                        <img src="images/foto1.jpg" alt="Beso bajo las luces de la ciudad">
+                    </div>
+                    <p class="polaroid-caption">Nuestro beso bajo las luces de la ciudad ♥</p>
+                </div>
+
+                <div class="polaroid-card" data-index="2">
+                    <div class="polaroid-img-wrapper">
+                        <img src="images/foto2.jpg" alt="Sentados frente al lago">
+                    </div>
+                    <p class="polaroid-caption">Mirando juntos en la misma dirección...</p>
+                </div>
+
+                <div class="polaroid-card" data-index="3">
+                    <div class="polaroid-img-wrapper">
+                        <img src="images/foto3.jpg" alt="Selfie de noche">
+                    </div>
+                    <p class="polaroid-caption">La noche que nos pertenece ✨</p>
+                </div>
+
+                <div class="polaroid-card" data-index="4">
+                    <div class="polaroid-img-wrapper">
+                        <img src="images/foto4.jpg" alt="Abrazo frente al lago">
+                    </div>
+                    <p class="polaroid-caption">En tus brazos es mi lugar seguro 🏔️</p>
+                </div>
+
+                <div class="polaroid-card" data-index="5">
+                    <div class="polaroid-img-wrapper">
+                        <img src="images/foto5.jpg" alt="Selfie frente a torre morada">
+                    </div>
+                    <p class="polaroid-caption">Pintados de nuestro color favorito 💜</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive 100 Reasons Section -->
+        <section class="reasons-section glass-card">
+            <h2 class="section-title">100 Motivos para Seguir</h2>
+            <p class="reasons-intro">He recopilado 100 razones por las cuales vales todo en mi vida. Usa el buscador o presiona el botón sorpresa para ver uno al azar.</p>
+            
+            <div class="interactive-controls">
+                <!-- Search box -->
+                <div class="search-wrapper">
+                    <input type="text" id="search-input" placeholder="Busca una palabra (ej. sushi, bailar, sonrisa)...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <!-- Random reason generator -->
+                <button class="surprise-btn" id="surprise-btn">
+                    <span>✨</span> Motivo Sorpresa
+                </button>
+            </div>
+
+            <!-- Categories Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active" data-category="all">Todos</button>
+                <button class="tab-btn" data-category="detalles">Tus Detalles</button>
+                <button class="tab-btn" data-category="momentos">Nuestros Momentos</button>
+                <button class="tab-btn" data-category="promesas">Mis Promesas</button>
+            </div>
+
+            <!-- Reasons Grid -->
+            <div class="reasons-grid" id="reasons-grid">
+                <!-- Will be dynamically populated via JS -->
+            </div>
+            
+            <!-- Dynamic Count of reasons shown -->
+            <div class="reasons-count" id="reasons-count">Mostrando 100 motivos</div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Hecho con amor y paciencia por Daniel para su persona favorita.</p>
+            <p class="footer-anniversary">17 de cada mes. Siempre tú y yo. ♥</p>
+        </footer>
+
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Imagen ampliada">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Surprise Modal for Random Reason -->
+    <div class="surprise-modal" id="surprise-modal">
+        <div class="surprise-modal-card">
+            <span class="surprise-close" id="surprise-close">&times;</span>
+            <div class="surprise-badge">Motivo Sorpresa</div>
+            <div class="surprise-number" id="surprise-num">#0</div>
+            <p class="surprise-text" id="surprise-text">Cargando...</p>
+            <button class="surprise-again-btn" id="surprise-again-btn">Ver Otro Motivo ✨</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
